@@ -48,7 +48,7 @@ fun WheelTimePicker(
 
     var selectedTime by remember { mutableStateOf(startTime) }
 
-    val formats = listOf<String>("AM", "PM")
+    val formats = listOf("AM", "PM")
 
 
     val hours = mutableListOf<Int>().apply {
@@ -58,7 +58,7 @@ fun WheelTimePicker(
     }
 
     val minutes = mutableListOf<Int>().apply {
-        for (minute in 0..59) {
+        for (minute in 0..59 step 5) {
             add(minute)
         }
     }
@@ -138,7 +138,7 @@ fun WheelTimePicker(
                     },
                     content = {
                         Text(
-                            text = formats[it].toString(),
+                            text = formats[it],
                             textAlign = TextAlign.Center,
                             modifier = Modifier.width(100.dp),
                             fontSize = fontSize.sp,
