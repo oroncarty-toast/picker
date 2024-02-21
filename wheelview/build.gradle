@@ -41,9 +41,9 @@ android {
 publishing {
     publications {
         release(MavenPublication) {
-            groupId 'com.ozcanalasalvar'
+            groupId 'com.oroncarty-toast'
             artifactId 'wheelview'
-            version '1.0.0-alpha08'
+            version 'master-SNAPSHOT'
             artifact("$buildDir/outputs/aar/wheelview-release.aar")
         }
     }
