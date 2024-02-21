@@ -97,7 +97,7 @@ fun WheelTimePicker(
                 },
                 content = {
                     Text(
-                        text = if (hours[it] < 10) "0${hours[it]} hr" else "${hours[it]} hr",
+                        text = "${hours[it]} hr",
                         textAlign = TextAlign.Center,
                         modifier = Modifier.width(50.dp),
                         fontSize = fontSize.sp,
@@ -117,7 +117,7 @@ fun WheelTimePicker(
                 },
                 content = {
                     Text(
-                        text = if (minutes[it] < 10) "0${minutes[it]} min" else "${minutes[it]} min",
+                        text = "${minutes[it]} min",
                         textAlign = TextAlign.Center,
                         modifier = Modifier.width(100.dp),
                         fontSize = fontSize.sp,
